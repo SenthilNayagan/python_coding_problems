@@ -4,10 +4,13 @@ from coding_problems.find_pair_sums_given_val import FindPairSum
 
 
 class TestFindPairSum(unittest.TestCase):
-    """Testcases for FindPairSum."""
+    """Unit testcases."""
     def setUp(self) -> None:
-        """Set up."""
+        """Test fixture."""
         self.nums = [4, 1, 5, -3, 6]
+
+    def tearDown(self):
+        pass
 
     def test_find_pair_bf(self):
         self.assertTrue(FindPairSum.find_pair_bf(self.nums, 11))

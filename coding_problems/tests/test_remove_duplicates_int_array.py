@@ -4,12 +4,14 @@ from coding_problems.remove_duplicates_int_array import RemoveDuplicatesIntArray
 
 
 class TestRemoveDuplicatesIntArray(unittest.TestCase):
-    """Testcases for FindPairSum."""
+    """Unit testcases."""
     def setUp(self) -> None:
-        """Set up."""
+        """Test fixture."""
         self.lst_of_nums_1 = [4, 2, 5, 3, 3, 1, 2, 4, 1, 5, 5, 5, 3, 1]
         self.lst_of_nums_2 = [1, 1, 1, 1, 1, 1, 1, 1]
 
+    def tearDown(self):
+        pass
 
     def test_remove_duplicates_bf(self):
         self.assertEqual(RemoveDuplicatesIntArray.remove_duplicates_bf(self.lst_of_nums_1), [4, 2, 5, 3, 1])

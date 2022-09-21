@@ -4,9 +4,12 @@ from coding_problems.find_first_repeating_char import FindRepeatingChar
 
 
 class TestFindRepeatingChar(unittest.TestCase):
-    """Testcases for FindPairSum."""
+    """Unit testcases."""
     def setUp(self) -> None:
-        """Set up."""
+        """Test fixture."""
+        pass
+
+    def tearDown(self):
         pass
 
     def test_first_repeating_character_bf(self):
