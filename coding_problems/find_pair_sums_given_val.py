@@ -24,7 +24,11 @@ class FindPairSum(object):
 
     @staticmethod
     def find_pair_bf(nums, k):
-        """Brute force solution."""
+        """Brute force solution.
+
+        Time complexity:
+        Space complexity:
+        """
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
                 if nums[i] + nums[j] == k:
@@ -33,7 +37,11 @@ class FindPairSum(object):
 
     @staticmethod
     def find_pair_sorted(nums, k):
-        """Sorted approach, reduces the amount of traversal needed."""
+        """Sorted approach, reduces the amount of traversal needed.
+
+        Time complexity:
+        Space complexity:
+        """
         nums.sort()
         left_idx = 0
         right_idx = len(nums) - 1

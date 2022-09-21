@@ -26,7 +26,11 @@ class FindRepeatingChar(object):
 
     @staticmethod
     def first_repeating_character_bf(str):
-        """Brute force approach."""
+        """Brute force approach.
+
+        Time complexity:
+        Space complexity:
+        """
         for i in range(len(str)):
             for j in range(i):
                 if str[i] == str[j]:
@@ -36,7 +40,11 @@ class FindRepeatingChar(object):
     @staticmethod
     def first_repeating_character_hash(str):
         """This solution uses hash table. Hash has the complexity of O(1) for
-        both lookup and insertion."""
+        both lookup and insertion.
+
+        Time complexity:
+        Space complexity:
+        """
         visited = {}  # Python dictionary is being used as hash table
 
         for chr in str:
