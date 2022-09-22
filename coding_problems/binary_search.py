@@ -55,5 +55,5 @@ if __name__ == "__main__":
     print(BinarySearch.binary_search(seq, 7))
     print(BinarySearch.binary_search(seq, 10))
 
-    print(BinarySearch.binary_search_recursive(seq, 0, len(seq) -1, 7))
-    print(BinarySearch.binary_search_recursive(seq, 0, len(seq) -1, 10))
+    print(BinarySearch.binary_search_recursive(seq, 0, len(seq)-1, 5))
+    print(BinarySearch.binary_search_recursive(seq, 0, len(seq)-1, 10))
