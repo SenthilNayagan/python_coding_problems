@@ -18,7 +18,7 @@ Explanation: 1 + (-3) is equivalent to -2
 
 
 class FindPairSum(object):
-    def __int__(self):
+    def __init__(self):
         """Constructor."""
         pass
 

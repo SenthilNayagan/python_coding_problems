@@ -17,7 +17,7 @@ to wrap the filter() result in list() for printing like this: list(filter()).
 
 
 class FilterExercises(object):
-    def __int__(self):
+    def __init__(self):
         """Constructor."""
         pass
 
@@ -36,3 +36,4 @@ class FilterExercises(object):
 if __name__ == "__main__":
     print(FilterExercises.extract_vowels("pineapple"))
     print(FilterExercises.extract_vowels("banana"))
+    print(FilterExercises().extract_vowels("pineapple"))

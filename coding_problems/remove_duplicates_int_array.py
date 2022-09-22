@@ -16,7 +16,7 @@ Output: [1]
 
 
 class RemoveDuplicatesIntArray(object):
-    def __int__(self):
+    def __init__(self):
         """Constructor."""
         pass
 

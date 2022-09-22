@@ -20,7 +20,7 @@ Output: ‘\0’
 
 
 class FindRepeatingChar(object):
-    def __int__(self):
+    def __init__(self):
         """Constructor."""
         pass
 
@@ -56,6 +56,7 @@ class FindRepeatingChar(object):
 
 
 if __name__ == "__main__":
+    print(FindRepeatingChar().first_repeating_character_bf("inside code"))  # returns 'i'
     print(FindRepeatingChar.first_repeating_character_bf("inside code"))  # returns 'i'
     print(FindRepeatingChar.first_repeating_character_bf("programming"))  # returns 'r'
     print(FindRepeatingChar.first_repeating_character_bf("abcd"))  # returns '\0'

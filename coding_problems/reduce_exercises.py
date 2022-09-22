@@ -17,7 +17,7 @@ Parameters:
 from functools import reduce
 
 class ReduceExercises(object):
-    def __int__(self):
+    def __init__(self):
         """Constructor."""
         pass
 
@@ -25,6 +25,11 @@ class ReduceExercises(object):
     def sum_elements(nums):
         """Returns the total sum of all the elements from an iterable."""
         return reduce(lambda a, b: a + b, nums)
+
+    @staticmethod
+    def flatten_nested_list(nested_list):
+        """Flatten the given nested list."""
+        return reduce(lambda x, y: x + y, nested_list)
 
 
 if __name__ == "__main__":

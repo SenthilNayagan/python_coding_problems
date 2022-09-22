@@ -17,7 +17,7 @@ to wrap the map() result in list() for printing like this: list(map()).
 
 
 class MapExercises(object):
-    def __int__(self):
+    def __init__(self):
         """Constructor."""
         pass
 
