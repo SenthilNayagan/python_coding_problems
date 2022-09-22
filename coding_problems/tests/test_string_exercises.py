@@ -20,8 +20,9 @@ class TestStringExercises(unittest.TestCase):
         self.assertEqual(StringExercises.string_multiplication("Hello", 1), "Hello")
 
     def test_shif_chars(self):
-        self.assertEqual(StringExercises.shif_chars(['a', 'b', 'c'], 2), ['c', 'd', 'e'])
-        self.assertEqual(StringExercises.shif_chars(['a', 'b', 'c'], 0), ['a', 'b', 'c'])
+        self.assertEqual(StringExercises.shift_chars(['a', 'b', 'c'], 2), ['c', 'd', 'e'])
+        self.assertEqual(StringExercises.shift_chars(['a', 'b', 'c'], 0), ['a', 'b', 'c'])
+
 
 if __name__ == "__main__":
     unittest.main()

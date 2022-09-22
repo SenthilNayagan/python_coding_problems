@@ -22,6 +22,10 @@ class TestNumbersExercises(unittest.TestCase):
     def test_flatten_nested_list(self):
         self.assertEqual(NumbersExercises.flatten_nested_list(self.nested_list), [1, 2, 3, 4, 5, 6, 7])
 
+    def test_find_max(self):
+        self.assertEqual(NumbersExercises.find_max(self.nums), 12)
+        self.assertNotEqual(NumbersExercises.find_max(self.nums), 2)
+
 
 if __name__ == "__main__":
     unittest.main()
