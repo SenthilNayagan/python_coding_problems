@@ -26,8 +26,8 @@ class FindPairSum(object):
     def find_pair_bf(nums, k):
         """Brute force solution.
 
-        Time complexity:
-        Space complexity:
+        Time complexity: O(n^2)
+        Space complexity: ?
         """
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):

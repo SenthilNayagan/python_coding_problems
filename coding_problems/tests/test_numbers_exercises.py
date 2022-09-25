@@ -10,6 +10,7 @@ class TestNumbersExercises(unittest.TestCase):
         self.fruits = ["apple", "orange", "banana", "pineapple"]
         self.nums = [3, 4, 8, 9, 12, 7]
         self.nested_list = [[1], [2, 3], [4, 5, 6, 7]]
+        self.num = 1234
 
     def tearDown(self):
         pass
@@ -25,6 +26,17 @@ class TestNumbersExercises(unittest.TestCase):
     def test_find_max(self):
         self.assertEqual(NumbersExercises.find_max(self.nums), 12)
         self.assertNotEqual(NumbersExercises.find_max(self.nums), 2)
+
+    def test_add_two_lists(self):
+        self.assertEqual(NumbersExercises.add_two_lists([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]), [8, 9, 9, 9, 0, 0, 1])
+        self.assertEqual(NumbersExercises.add_two_lists([4, 7, 1], [8, 1]), [2, 9, 1])
+
+    def test_reverse_number(self):
+        self.assertEqual(NumbersExercises.reverse_number_bad_smell(self.num), 4321)
+        self.assertEqual(NumbersExercises.reverse_number_bad_smell(1), 1)
+        self.assertEqual(NumbersExercises.reverse_number_bad_smell(0), 0)
+
+        self.assertEqual(NumbersExercises.reverse_number_optimized(-2456), -6542)
 
 
 if __name__ == "__main__":

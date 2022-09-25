@@ -28,8 +28,8 @@ class FindRepeatingChar(object):
     def first_repeating_character_bf(str):
         """Brute force approach.
 
-        Time complexity:
-        Space complexity:
+        Time complexity: O(n^2)
+        Space complexity: ?
         """
         for i in range(len(str)):
             for j in range(i):
@@ -38,20 +38,20 @@ class FindRepeatingChar(object):
         return '\0'
 
     @staticmethod
-    def first_repeating_character_hash(str):
+    def first_repeating_character_hash(s):
         """This solution uses hash table. Hash has the complexity of O(1) for
         both lookup and insertion.
 
         Time complexity:
-        Space complexity:
+        Space complexity: O(n) - Because of hash table.
         """
         visited = {}  # Python dictionary is being used as hash table
 
-        for chr in str:
-            if visited.get(chr):  # O(1) for lookup
-                return chr
+        for c in s:
+            if visited.get(c):  # O(1) for lookup
+                return c
             else:
-                visited[chr] = True  # O(1) for insertion
+                visited[c] = True  # O(1) for insertion
         return '\0'
 
 

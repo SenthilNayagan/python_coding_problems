@@ -1,5 +1,7 @@
 """
-Binary search.
+Binary search. It's bi-nary, meaning two parts in it.
+
+Sorting is mandate for binary search.
 """
 
 
@@ -11,7 +13,7 @@ class BinarySearch(object):
     @staticmethod
     def binary_search(sequence, search_item) -> 'String':
         """
-        Binary search using iteration.
+        Binary search using iterative approach.
 
         :param sequence: List of numbers.
         :param search_item: Item to be searched.
@@ -31,12 +33,17 @@ class BinarySearch(object):
                 return 'Found'
             elif search_item < mid_value:
                 end_index = mid_index - 1
-            else:
+            else:  # search item is greater
                 start_index = mid_index + 1
         return 'Not found'
 
     @staticmethod
     def binary_search_recursive(sequence, start_index, end_index, search_item) -> 'String':
+        """Binary search using recursive.
+
+        Time complexity: O(2^n)
+        Space complexity:
+        """
         if end_index >= start_index:
             mid_index = (end_index + start_index) // 2
 
