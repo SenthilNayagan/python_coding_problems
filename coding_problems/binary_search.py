@@ -44,6 +44,8 @@ class BinarySearch(object):
         Time complexity: O(2^n)
         Space complexity:
         """
+        sequence.sort()  # It's mandate to sort the sequence before proceed further.
+
         if end_index >= start_index:
             mid_index = (end_index + start_index) // 2
 
@@ -61,6 +63,8 @@ if __name__ == "__main__":
     seq = [5, 2, 8, 7, 3, 1, 9, 4, 6]
     print(BinarySearch.binary_search(seq, 7))
     print(BinarySearch.binary_search(seq, 10))
+    print(BinarySearch.binary_search(seq, 0))
 
     print(BinarySearch.binary_search_recursive(seq, 0, len(seq)-1, 5))
     print(BinarySearch.binary_search_recursive(seq, 0, len(seq)-1, 10))
+    print(BinarySearch.binary_search_recursive(seq, 0, len(seq) - 1, 0))
